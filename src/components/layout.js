@@ -5,23 +5,21 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles, lightTheme, darkTheme } from "../styles/GlobalStyles"
 import useLocalStorage from 'use-local-storage';
+import { isBrowser } from "../utils";
 
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? darkTheme : lightTheme);
+  const [theme, setTheme] = useLocalStorage('theme', true ? darkTheme : lightTheme);
 
   const themeToggler = () => {
     const newTheme = theme.colors.background === '#fff' ? darkTheme : lightTheme;
