@@ -13,6 +13,23 @@ const Header = ({ siteTitle, themeToggler }) => {
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
           crossorigin="anonymous"
         />
+
+        <meta name="image" content="https://kxnxchukwu.github.io//img/og.png" />
+        <meta property="og:title" content="Kene's Personal Website" />
+        <meta property="og:description" content="Simple Website displaying Kene's portofolio" />
+        <meta property="og:image" content="https://kxnxchukwu.github.io//img/og.png" />
+    
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://kxnxchukwu.github.io//img/og.png" />
+        <meta name="twitter:creator" content="@kxnxchukwu" />
+        <meta name="twitter:title" content="Kene's Blog" />
+        <meta name="twitter:description" content="Kene's Blog where he talks mostly about JavaScript" />
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://kxnxchukwu.github.io/"/>
+        <meta property="og:title" content="Kene's Blog"/>
+        <meta property="og:description" content="Kene's Blog where he talks mostly about JavaScript"/>
+        <meta property="og:image" content="https://kxnxchukwu.github.io//img/og.png" />
       </Helmet>
       <header
         style={{

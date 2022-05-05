@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles, lightTheme, darkTheme } from "../styles/GlobalStyles"
 import useLocalStorage from 'use-local-storage';
-import { isBrowser } from "../utils";
 
 
 import Header from "./header"
@@ -19,7 +18,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
 
-  const [theme, setTheme] = useLocalStorage('theme', true ? darkTheme : lightTheme);
+  const [theme, setTheme] = useLocalStorage('theme', false ? darkTheme : lightTheme);
 
   const themeToggler = () => {
     const newTheme = theme.colors.background === '#fff' ? darkTheme : lightTheme;
