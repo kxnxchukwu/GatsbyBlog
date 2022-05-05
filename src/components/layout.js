@@ -18,7 +18,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
 
-  const [theme, setTheme] = useLocalStorage('theme', false ? darkTheme : lightTheme);
+  const [theme, setTheme] = useLocalStorage('theme', true ? lightTheme : darkTheme);
 
   const themeToggler = () => {
     const newTheme = theme.colors.background === '#fff' ? darkTheme : lightTheme;
