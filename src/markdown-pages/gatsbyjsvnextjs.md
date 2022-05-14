@@ -1,7 +1,7 @@
 ---
 title: "Next.Js vs Gatsby.Js Framework"
 date: "2022-05-03"
-description: 'Why I Love Ice Cream'
+description: 'Explaining Next.JS and Gatsby.JS Frameworks.'
 ---
 
 ![](https://miro.medium.com/max/1400/1*EZsnzyhVcWwGdWtc_H0DEg.jpeg)
