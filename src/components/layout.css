@@ -261,5 +261,5 @@ pre tt:after {
 }
 
 code {
-  max-width: 400px;
+  word-break: break-word;
 }
